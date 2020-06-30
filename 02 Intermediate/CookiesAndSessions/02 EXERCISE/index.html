@@ -1,0 +1,31 @@
+<!-- Create cookies for the login page with the checkbox “Remember Me”, and set it for a day.
+    If the login is successful redirect the user to a new page with “Welcome , username.” -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <style>
+    input[type="text"],[type="password"]{
+        margin: 10px 12px;
+    }
+    div{
+        background-color:cornsilk;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div>
+    <form method="post" name="loginauth" action="login.php">
+        User Name:<input type="text" name="username"><br>
+        Password:<input type="password" name="password"><br>
+        Remember Me:<input type="checkbox" name="rememberme" value="1">
+        <input type="submit" name="submit" value="submit">
+</form>
+</div>
+</body>
+</html>
